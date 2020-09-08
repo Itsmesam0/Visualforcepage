@@ -1,0 +1,13 @@
+<apex:page standardController="Project__c" title="Project Creation" extensions="ProjectCreateExtension" lightningStylesheets="true">
+    <apex:form >
+    	<apex:pageBlock title="Project Details">
+            Name :        	<apex:inputField label="Name" value="{!Project__c.Name}"/> <br/><br/>
+            Start Date :    <apex:inputField label="Start Date" value="{!Project__c.Start_Date__c}"/> <br/><br/>
+            Budget :        <apex:inputField label="Budget" value="{!Project__c.Budget__c}"/> <br/><br/>
+        
+        	<apex:pageBlockButtons location="Bottom">
+        		<apex:commandButton action="{!ToPage2}" value="Continue" />
+       		</apex:pageBlockButtons>
+       </apex:pageBlock>
+    </apex:form>
+</apex:page>
